@@ -124,7 +124,7 @@ jobs:
       - name: 12.서비스 리포지토리 변경사항 커밋 및 푸시
         run: |
           git config --global user.name 'jykim'
-          git config --global user.email 'jykim.loa2000@gmail.com'
+          git config --global user.email 'loa2000@naver.com'
           git commit -am "Update image tag to ${{ env.DOCKER_TAG }}"
           git remote set-url origin https://${{ secrets.PAT }}@github.com/Jay-private/istory-service.git
           
