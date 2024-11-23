@@ -128,6 +128,6 @@ jobs:
           git config --global user.name 'jykim'
           git config --global user.email 'loa2000@naver.com'
           git commit -am "Update image tag to ${{ env.DOCKER_TAG }}"
-          git remote set-url origin https://${{ secrets.PAT }}@github.com/Jay-private/istory-service.git
+          git remote set-url origin https://x-access-token:${{ secrets.PAT }}@github.com/Jay-private/istory-service.git
           
           git push origin main
